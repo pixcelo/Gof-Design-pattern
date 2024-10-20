@@ -30,10 +30,12 @@ namespace GofDesignPattern.Iterator
 
         public IEnumerator<Book> GetEnumerator()
         {
-            for (int i = 0; i < this.last; i++)
-            {
-                yield return this.books[i];
-            }
+            //for (int i = 0; i < this.last; i++)
+            //{
+            //    yield return this.books[i];
+            //}
+
+            return new BookShelfIterator(this);
         }
 
         IEnumerator IEnumerable.GetEnumerator()

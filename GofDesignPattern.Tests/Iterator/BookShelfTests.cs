@@ -8,7 +8,7 @@ namespace GofDesignPattern.Tests.Iterator
         /// Iteratorパターンの振る舞いを確認する
         /// </summary>
         [Fact]
-        public void Ok()
+        public void OkIterator()
         {
             // Arrange
             var bookShelf = new BookShelf(3);
@@ -22,6 +22,15 @@ namespace GofDesignPattern.Tests.Iterator
             foreach (var book in bookShelf)
             {
                 books.Add(book);
+            }
+
+            // 明示的にIteratorを使う方法
+            var iterator = bookShelf.GetEnumerator();
+          
+            while (iterator.MoveNext())
+            {
+                Book book = iterator.Current;
+                Console.WriteLine(book.GetName());
             }
         }
 
