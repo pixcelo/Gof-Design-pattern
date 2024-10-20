@@ -1,1 +1,1 @@
-"# Gof-Design-pattern" 
+# Gof-Design-pattern
