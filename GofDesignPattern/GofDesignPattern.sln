@@ -5,6 +5,8 @@ VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GofDesignPattern", "GofDesignPattern.csproj", "{811699EA-DE67-48DA-A650-EA1C55DC6151}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GofDesignPattern.Tests", "..\GofDesignPattern.Tests\GofDesignPattern.Tests.csproj", "{F9C1F421-37A1-4DED-A0CC-900850DCE830}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{811699EA-DE67-48DA-A650-EA1C55DC6151}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{811699EA-DE67-48DA-A650-EA1C55DC6151}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{811699EA-DE67-48DA-A650-EA1C55DC6151}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9C1F421-37A1-4DED-A0CC-900850DCE830}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9C1F421-37A1-4DED-A0CC-900850DCE830}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9C1F421-37A1-4DED-A0CC-900850DCE830}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9C1F421-37A1-4DED-A0CC-900850DCE830}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
