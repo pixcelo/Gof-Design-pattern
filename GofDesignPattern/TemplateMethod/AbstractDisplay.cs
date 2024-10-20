@@ -10,6 +10,7 @@
 
         public abstract void Close();
 
+        // 抽象クラスで処理の流れを形作る
         public void Display()
         {
             this.Open();
