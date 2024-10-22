@@ -8,7 +8,7 @@
             try
             {
                 factory = Activator.CreateInstance(Type.GetType(className)) as Factory;
-            }            
+            }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.StackTrace);

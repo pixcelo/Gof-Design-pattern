@@ -17,6 +17,6 @@ namespace GofDesignPattern.AbstractFactory.ListFactory
         public override Page CreatePage(string title, string author)
         {
             return new ListPage(title, author);
-        }        
+        }
     }
 }

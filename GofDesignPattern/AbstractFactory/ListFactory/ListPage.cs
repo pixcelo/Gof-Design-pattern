@@ -15,15 +15,15 @@ namespace GofDesignPattern.AbstractFactory.ListFactory
             sb.Append($"<html><head><title>{base.title}</title></head>\n");
             sb.Append($"<body>\n");
             sb.Append($"<h1>{base.title}</h1>\n");
-            sb.Append($"<ul>\n");            
-            foreach (var item in content)
+            sb.Append($"<ul>\n");
+            foreach (var item in base.content)
             {
-                sb.Append(item.MakeHTML());                
+                sb.Append(item.MakeHTML());
             }
             sb.Append($"</ul>\n");
             sb.Append($"<hr><address>{base.author}</address>\n");
             sb.Append($"</body></html>\n");
-            return sb.ToString();            
+            return sb.ToString();
         }
     }
 }
