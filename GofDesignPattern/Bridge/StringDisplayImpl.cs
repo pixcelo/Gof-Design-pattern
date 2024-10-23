@@ -18,7 +18,7 @@
 
         public override void RawPrint()
         {
-            System.Console.WriteLine($"|{this.str}|");
+            Console.WriteLine($"|{this.str}|");
         }
 
         public override void RawClose()
