@@ -11,8 +11,11 @@
 
   <ItemGroup>
     <Compile Remove="Abstract Factory\**" />
+    <Compile Remove="Resources\**" />
     <EmbeddedResource Remove="Abstract Factory\**" />
+    <EmbeddedResource Remove="Resources\**" />
     <None Remove="Abstract Factory\**" />
+    <None Remove="Resources\**" />
   </ItemGroup>
 
   <ItemGroup>
