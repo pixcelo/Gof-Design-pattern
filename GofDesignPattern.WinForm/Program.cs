@@ -1,4 +1,5 @@
 ﻿using GofDesignPattern.WinForm.Mediator;
+using GofDesignPattern.WinForm.State;
 using System;
 using System.Windows.Forms;
 
@@ -14,7 +15,8 @@ namespace GofDesignPattern.WinForm
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginFrame());
+            //Application.Run(new LoginFrame());
+            Application.Run(new SafeFrame());
         }
     }
 }

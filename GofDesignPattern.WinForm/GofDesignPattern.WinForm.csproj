@@ -65,6 +65,16 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="State\DayState.cs" />
+    <Compile Include="State\IContext.cs" />
+    <Compile Include="State\IState.cs" />
+    <Compile Include="State\NightState.cs" />
+    <Compile Include="State\SafeFrame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="State\SafeFrame.Designer.cs">
+      <DependentUpon>SafeFrame.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Mediator\LoginFrame.resx">
       <DependentUpon>LoginFrame.cs</DependentUpon>
     </EmbeddedResource>
@@ -77,6 +87,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="State\SafeFrame.resx">
+      <DependentUpon>SafeFrame.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
