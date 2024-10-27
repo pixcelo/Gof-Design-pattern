@@ -21,10 +21,10 @@ namespace GofDesignPattern.WinForm.State
 
         private void Initialize()
         {
-            this.buttonUse.Click += ButtonClickHander;
-            this.buttonAlarm.Click += ButtonClickHander;
-            this.buttonPhone.Click += ButtonClickHander;
-            this.buttonExit.Click += ButtonClickHander;
+            this.buttonUse.Click += ((sender, e) => this.state.DoUse(this));
+            this.buttonAlarm.Click += ((sender, e) => this.state.DoAlarm(this));
+            this.buttonPhone.Click += ((sender, e) => this.state.DoPhone(this));
+            this.buttonExit.Click += ((sender, e) => Application.Exit());
         }
 
         private void SafeFrame_Load(object sender, EventArgs e)
@@ -41,30 +41,6 @@ namespace GofDesignPattern.WinForm.State
                     }
                 }
             }));
-        }
-
-        private void ButtonClickHander(object sender, EventArgs e)
-        {
-            if (sender == this.buttonUse)
-            {
-                this.state.DoUse(this);
-            }
-            else if (sender == this.buttonAlarm)
-            {
-                this.state.DoAlarm(this);
-            }
-            else if (sender == this.buttonPhone)
-            {
-                this.state.DoPhone(this);
-            }
-            else if (sender == this.buttonExit)
-            {
-                Application.Exit();
-            }
-            else
-            {
-                Console.WriteLine("?");
-            }
         }
 
         /// <summary>
